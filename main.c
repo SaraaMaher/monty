@@ -1,6 +1,8 @@
 #include "main.h"
 #include <string.h>
+
 global_t LIST;
+
 /**
  * free_List - frees the global variables
  *
@@ -8,9 +10,9 @@ global_t LIST;
  */
 void free_List(void)
 {
-free_dlistint(List.head);
-free(List.buffer);
-fclose(List.fd);
+free_dlistint(LIST.head);
+free(LIST.buffer);
+fclose(LIST.fd);
 }
 /**
  * initialize_list - initializes list

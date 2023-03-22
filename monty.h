@@ -53,7 +53,7 @@ stack_t *head;
 FILE *fd;
 char *buffer;
 } global_t;
-
+extern global_t LIST;
 /*listfunctions*/
 stack_t *add_dnodeint_end(stack_t **head, const int n);
 stack_t *add_dnodeint(stack_t **head, const int n);
